@@ -1,10 +1,62 @@
+* {
+    font-family: 'Finlandica', sans-serif;
+    margin: 0;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
-footer {
+.nav ul {
     position: fixed;
-    text-align: center;
-    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 68px;
     width: 100%;
+    background-color: rgb(250, 229, 229);
+}
+.nav li:not(:first-child) {
+    list-style: none;
+    font-weight: 600;
+    font-size: 23px;
+    margin: auto 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav li:not(:first-child):hover {
+    color: #b9a3f8;
+}
+
+.nav li:first-child {
+    list-style: none;
+    font-weight: 900;
+    font-size: 40px;
+    cursor: pointer;
+    margin-right: 400px;
+}
+
+.home {
+    
+    height: 600px;
+    background-color: rgb(120, 229, 236);
+}
+.skills {
+    height: 600px;
+    background-color: rgb(170, 168, 135);
+}
+.projects {
+    height: 600px;
+    background-color: rgb(179, 209, 123);
+}
+.contact {
+    height: 600px;
+    background-color: rgb(107, 115, 160);
+}
+.scroll-up {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background-color: white;
+    border-radius: 45%;
 }
